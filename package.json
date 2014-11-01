@@ -1,0 +1,22 @@
+{
+  "name": "ng-coffee-fizzbuzz",
+  "version": "1.0.0",
+  "description": "Fizzbuzz with angularjs and coffee-script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wingyplus/ng-coffee-fizzbuzz"
+  },
+  "author": "Thanabodee Charoenpiriyakij <wingyminus@gmail.com>",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/wingyplus/ng-coffee-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/wingyplus/ng-coffee-fizzbuzz",
+  "devDependencies": {
+    "coffee-script": "^1.8.0"
+  }
+}
