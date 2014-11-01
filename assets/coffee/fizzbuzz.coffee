@@ -1,13 +1,16 @@
 class Fizzbuzz
   constructor: (@n) ->
 
-  say: () ->
+  say: ->
     if @n % 3 is 0
       'Fizz'
     else if @n % 5 is 0
       'Buzz'
     else
-      '1'
+      "#{@n}"
 
 window.ngfizzbuzz =
   Fizzbuzz: Fizzbuzz
+
+app = angular.module 'ngfizzbuzz', []
+app.factory 'Fizzbuzz', -> Fizzbuzz
