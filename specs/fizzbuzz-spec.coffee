@@ -21,5 +21,5 @@ describe 'Fizzbuzz', ->
     beforeEach inject ($controller) ->
       @controller = $controller 'FizzbuzzController', {}
 
-    it 'should be "Fizz" when say 1', ->
+    it 'should be "1" when say 1', ->
       expect(@controller.say(1)).toEqual '1'
