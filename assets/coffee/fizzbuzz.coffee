@@ -10,8 +10,8 @@ class Fizzbuzz
       "#{@n}"
 
 class FizzbuzzController
-	say: (n) ->
-		new Fizzbuzz(n).say()
+  say: (n) ->
+    new Fizzbuzz(n).say()
 
 window.ngfizzbuzz =
   Fizzbuzz: Fizzbuzz
