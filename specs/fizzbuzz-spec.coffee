@@ -15,3 +15,11 @@ describe 'Fizzbuzz', ->
     it 'should inject Fizzbuzz class from factory', inject (Fizzbuzz) ->
       expect(Fizzbuzz).not.toBeNull()
       expect(new Fizzbuzz(3).say()).toEqual 'Fizz'
+
+  describe 'angular:controller', ->
+    beforeEach module 'ngfizzbuzz'
+    beforeEach inject ($controller) ->
+      @controller = $controller 'FizzbuzzController', {}
+
+    it 'should be "Fizz" when say 1', ->
+      expect(@controller.say(1)).toEqual '1'

@@ -9,8 +9,13 @@ class Fizzbuzz
     else
       "#{@n}"
 
+class FizzbuzzController
+	say: (n) ->
+		new Fizzbuzz(n).say()
+
 window.ngfizzbuzz =
   Fizzbuzz: Fizzbuzz
 
 app = angular.module 'ngfizzbuzz', []
 app.factory 'Fizzbuzz', -> Fizzbuzz
+app.controller 'FizzbuzzController', FizzbuzzController
